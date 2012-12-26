@@ -1,6 +1,5 @@
 <div class="body">
-            <div id="cse-results"><div id="___gcse_1"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><div class="gsc-results-wrapper-nooverlay"><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Web</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="show one result">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="show more results">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="show all results">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div></div></div></div></div>
-            
+
   <div class="section" id="sql-to-mongodb-mapping-chart">
 <h1>SQL to MongoDB Mapping Chart<a class="headerlink" href="#sql-to-mongodb-mapping-chart" title="Permalink to this headline">¶</a></h1>
 <p>In addition to the charts that follow, you might want to consider the
@@ -10,11 +9,7 @@
 <p>The following table presents the MySQL/Oracle executables and the
 corresponding MongoDB executables.</p>
 <table border="1" class="docutils">
-<colgroup>
-<col width="25%">
-<col width="22%">
-<col width="52%">
-</colgroup>
+
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&nbsp;</th>
 <th class="head">MySQL/Oracle</th>
@@ -718,11 +713,5 @@ for more information.</td>
 </div>
 
 
-<div id="btnv">
-<ul id="btnvl">
-<li id="btnvpr"><a href="../method/waitProgram/" title="Previous Section: waitProgram()">&lt; &nbsp; waitProgram()</a></li>
-<li id="btnvup"><a href="../" title="Parent Section: Reference">/\&nbsp; Reference</a></li>
-<li id="btnvnx"><a href="../sql-aggregation-comparison/" title="Next Section: SQL to Aggregation Framework Mapping Chart">SQL to Aggregation Framework Mapping Chart &nbsp;&gt;</a></li>
-</ul>
-</div>
+
 </div>
