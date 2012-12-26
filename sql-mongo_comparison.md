@@ -1,6 +1,4 @@
-<div class="body">
-
-  <div class="section" id="sql-to-mongodb-mapping-chart">
+<div class="section" id="sql-to-mongodb-mapping-chart">
 <h1>SQL to MongoDB Mapping Chart<a class="headerlink" href="#sql-to-mongodb-mapping-chart" title="Permalink to this headline">¶</a></h1>
 <p>In addition to the charts that follow, you might want to consider the
 <a class="reference internal" href="../../faq/"><em>Frequently Asked Questions</em></a> section for a selection of common questions about MongoDB.</p>
@@ -9,7 +7,11 @@
 <p>The following table presents the MySQL/Oracle executables and the
 corresponding MongoDB executables.</p>
 <table border="1" class="docutils">
-
+<colgroup>
+<col width="25%">
+<col width="22%">
+<col width="52%">
+</colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&nbsp;</th>
 <th class="head">MySQL/Oracle</th>
@@ -710,8 +712,4 @@ for more information.</td>
 </table>
 </div>
 </div>
-</div>
-
-
-
 </div>
