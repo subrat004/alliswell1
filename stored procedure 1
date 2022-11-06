@@ -1,0 +1,17 @@
+delimiter //
+create procedure proc_grade(in marks int, out class char(10))
+ -> begin
+ -> if marks<=1500 and marks>=990 then set class='DIST';
+ -> end if;
+ -> if marks<=989 and marks>=900 then set class='FC';
+ -> end if;
+ -> if marks<=899 and marks>=825 then set class='HSC';
+ -> end if;
+ -> if marks<=824 and marks>=750 then set class='SC';
+ -> end if;
+ -> if marks<=749 and marks>=650 then set class='PC';
+ -> end if;
+ -> if marks < 650 then set class='fail';
+ -> end if;
+ -> end ;
+ -> //
