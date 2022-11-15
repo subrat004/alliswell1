@@ -68,3 +68,8 @@ step 6 (do this for all entries)
 
 select find_result(1);
 //
+
+step 7
+
+select * from result;
+//
