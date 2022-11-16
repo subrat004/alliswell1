@@ -1,4 +1,4 @@
-step 1
+
 
 create table bkh(
   rollin int primary key,
@@ -9,7 +9,7 @@ create table bkh(
   );
   
   
-step 2
+
 
 create table charo(
   rollno int,
@@ -18,7 +18,7 @@ create table charo(
   amount int
   );
   
-step 3
+
 
 insert into bkh values
   (1, 'Murtaza', '2022-10-10', 'Tintin', 'pen'),
@@ -26,7 +26,7 @@ insert into bkh values
   (3, 'Kaushik', '2022-9-25', 'October', 'pen')
   ;
   
-step 4
+
   
 delimiter //
 create procedure calculate(in roll int)
@@ -50,7 +50,7 @@ update bkh set status='return' where rollin=roll;
 end
 //
 
-step 5 (do this for all entries)
+
 
 call calculate(1);//
 select * from charo;//
