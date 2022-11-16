@@ -1,4 +1,4 @@
-step 1
+
 
 create table Student_result(
     roll_no int primary key,
@@ -7,7 +7,7 @@ create table Student_result(
     );
 
 
-step 2
+
 
 insert into Student_result
     values
@@ -18,7 +18,7 @@ insert into Student_result
     (5, 'Mrunmayee', 450);
 
 
-step 3
+
 
 create table result(
     roll_no int,
@@ -27,7 +27,7 @@ create table result(
     );
 
 
-step 4
+
 
 delimiter //
 create procedure proc_grade(in total_marks int, out class varchar(255))
@@ -48,7 +48,7 @@ end ;
 //
 
 
-step 5
+
 
 create function find_result(roll_in int) returns int deterministic
 begin
@@ -64,12 +64,14 @@ end;
 //
 
 
-step 6 (do this for all entries)
+
 
 select find_result(1);
+select find_result(2);
+select find_result(3);
 //
 
-step 7
+
 
 select * from result;
 //
