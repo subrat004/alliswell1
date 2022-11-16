@@ -1,13 +1,13 @@
-step 1
+
 
 create database library;
 
-step 2
+
 
 use library;
 
 
-step 3
+
 
 create table Library(
     rollno int,
@@ -17,7 +17,7 @@ create table Library(
     );
 
 
-step 4
+
 
  create table Library_audit(
     rollno int,
@@ -27,7 +27,7 @@ step 4
     );
 
 
-step 5
+
 
 insert into Library
     values
@@ -39,7 +39,7 @@ insert into Library
     (6, 'Shraddha','hello','2022-9-14');
 
 
-step 6
+
     
 delimiter //
 create trigger after_insert after insert on Library for each row
@@ -49,7 +49,7 @@ end
 //
 
 
-step 7
+
 
 insert into Library
     values
@@ -58,13 +58,13 @@ insert into Library
     //
 
 
-step 8
+
 
 select * from Library_audit;
 //
 
 
-step 8
+
 
 create trigger after_update after update on Library for each row
 begin
@@ -73,7 +73,7 @@ end
 //
 
 
-step 9
+
 
 update Library
 set name='Mayank'
@@ -81,7 +81,7 @@ where name='Abdullah';
 //
 
 
-step 10
+
 
 select * from Library;
 //
@@ -90,7 +90,7 @@ select * from Library_audit;
 //
 
 
-step 11
+
 
 create trigger after_delete after delete on Library for each row
 begin
@@ -99,13 +99,13 @@ end
 //
 
 
-step 12
+
 
 delete from Library where rollno=7;
 //
 
 
-step 13
+
 
 select * from Library;
 //
