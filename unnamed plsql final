@@ -22,9 +22,9 @@ create table fine(
 
 
 insert into borrower values
-  (1, 'Murtaza', '2022-10-10', 'Tintin', 'pen'),
-  (2, 'Subrat', '2022-8-19', 'Oliver twist', 'pen'),
-  (3, 'Kaushik', '2022-9-25', 'October', 'pen')
+  (1, 'Murtaza', '2022-10-10', 'Tintin', 'I'),
+  (2, 'Subrat', '2022-8-19', 'Oliver twist', 'I'),
+  (3, 'Kaushik', '2022-9-25', 'October', 'I')
   ;
   
 select * from borrower;
@@ -49,7 +49,7 @@ insert into fine values (roll, curdate(), fine1);
 else
 insert into fine values (roll, curdate(), 0);
 end if;
-update borrower set status='return' where rollin=roll;
+update borrower set status='R' where rollin=roll;
 end
 //
 
