@@ -1,4 +1,5 @@
-
+create database stored_procedure;
+use stored_procedure;
 
 create table Student_result(
     roll_no int primary key,
