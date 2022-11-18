@@ -1,4 +1,5 @@
-
+create database unnamed_procedure;
+use unnamed_procedure;
 
 create table borrower(
   rollin int primary key,
