@@ -54,7 +54,7 @@ select * from salesman;
 
 select * from customer;
 
-select * from order_item
+select * from order_item;
 
 alter table salesman add mobile_no int(10);
 
