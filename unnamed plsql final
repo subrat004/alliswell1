@@ -1,6 +1,6 @@
 
 
-create table bkh(
+create table borrower(
   rollin int primary key,
   name varchar(255),
   doi date,
@@ -11,16 +11,16 @@ create table bkh(
   
 
 
-create table charo(
+create table fine(
   rollno int,
-  foreign key(rollno) references bkh(rollin),
+  foreign key(rollno) references borrower(rollin),
   returndate date,
   amount int
   );
   
 
 
-insert into bkh values
+insert into borrower values
   (1, 'Murtaza', '2022-10-10', 'Tintin', 'pen'),
   (2, 'Subrat', '2022-8-19', 'Oliver twist', 'pen'),
   (3, 'Kaushik', '2022-9-25', 'October', 'pen')
@@ -31,28 +31,27 @@ insert into bkh values
 delimiter //
 create procedure calculate(in roll int)
 begin
-declare charo1 int;
+declare fine1 int;
 declare noofdays int;
 declare issuedate date;
 declare exit handler for SQLEXCEPTION select 'create table definition';
-select doi into issuedate from bkh where rollin=roll;
+select doi into issuedate from borrower where rollin=roll;
 select datediff(curdate(), issuedate) into noofdays;
 if noofdays>15 and noofdays <=30 then
-set charo1=noofdays*5;
-insert into charo values (roll, curdate(), charo1);
+set fine1=noofdays*5;
+insert into fine values (roll, curdate(), fine1);
 elseif noofdays>30 then
-set charo1=((noofdays-30)*50)+ 15*5;
-insert into charo values (roll, curdate(), charo1);
+set fine1=((noofdays-30)*50)+ 15*5;
+insert into fine values (roll, curdate(), fine1);
 else
-insert into charo values (roll, curdate(), 0);
+insert into fine values (roll, curdate(), 0);
 end if;
-update bkh set status='return' where rollin=roll;
+update borrower set status='return' where rollin=roll;
 end
 //
 
 
 
 call calculate(1);//
-select * from charo;//
-
+select * from fine;//
 
