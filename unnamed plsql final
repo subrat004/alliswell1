@@ -27,7 +27,9 @@ insert into borrower values
   (3, 'Kaushik', '2022-9-25', 'October', 'pen')
   ;
   
+select * from borrower;
 
+select * from fine;
   
 delimiter //
 create procedure calculate(in roll int)
@@ -54,5 +56,8 @@ end
 
 
 call calculate(1);//
+call calculate(2);//
+call calculate(3);//
 select * from fine;//
 
+select * from borrower;//
