@@ -63,8 +63,10 @@ select name, commission from salesman;
 alter table salesman modify column commission float;
 
 create index inx on order_item(salesman_id);
+show index from order_item;
 
 create view v as select name, city from salesman where city="Mumbai";
+select * from v;
 
 select max(grade), city from customer group by city;
 
