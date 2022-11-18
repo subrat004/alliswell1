@@ -50,6 +50,12 @@ insert into order_item values
 (303, 1020, "2022/08/11", 204, 101),
 (304, 420, "2022/08/17", 201, 103);
 
+select * from salesman;
+
+select * from customer;
+
+select * from order_item
+
 alter table salesman add mobile_no int(10);
 
 select name, commission from salesman;
@@ -58,7 +64,7 @@ alter table salesman modify column commission float;
 
 create index inx on order_item(salesman_id);
 
-create view v as select name, city from salesman where city="Pune";
+create view v as select name, city from salesman where city="Mumbai";
 
 select max(grade), city from customer group by city;
 
