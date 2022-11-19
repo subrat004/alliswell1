@@ -7,7 +7,6 @@ create table N_RollCall(nroll int primary key, name varchar(25) NOT NULL);
 insert into N_RollCall values(3, "Rohan"), (2, "Rahul"), (7,"Satyam"), (8,"Ramdin"),(9,"Aditya"),(42, "Rajendra"),(78,"Raghav");
 
 delimiter $$
-drop procedure if exits Merge$$
 create procedure Merge()
 begin
 	declare roll int;
