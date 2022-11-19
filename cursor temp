@@ -12,7 +12,7 @@ create procedure Merge()
 begin
 	declare roll int;
 	declare done int DEFAULT FALSE;
-	declare r1 CURSOR for SELECT oroll from O_RollCall;;
+	declare r1 CURSOR for SELECT oroll from O_RollCall;
 	declare CONTINUE HANDLER FOR NOT FOUND SET done = TRUE; 
 	OPEN r1;
 	loop1 : LOOP
