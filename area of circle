@@ -23,8 +23,7 @@ end if;
 end LOOP;
 END $$
 
+delimiter ;
 call area();
-$$
 
 select * from areas;
-$$
