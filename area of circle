@@ -11,7 +11,7 @@ create procedure area()
 begin
 declare area float;
 declare radius float;
-set radius r=5;
+set radius=5;
 loop1 : LOOP
 if radius=10 then
 leave loop1;
