@@ -64,15 +64,15 @@ return roll_in;
 end;
 //
 
-
+delimiter ;
 
 
 select find_result(1);
 select find_result(2);
 select find_result(3);
-//
+
 
 
 
 select * from result;
-//
+
